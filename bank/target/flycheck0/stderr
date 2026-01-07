@@ -1,61 +1,12 @@
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   0.034368200s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: fingerprint error for bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank)/Check { test: false }/TargetInner { name: "bank", doc: true, ..: with_path("D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", Edition2024) }
-   0.034475500s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\kaggle\RUST\Rust Udemy learnnig\bank\target\debug\.fingerprint\bank-39e9fa41b651176d\bin-bank`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.055171300s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: fingerprint error for bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank)/Check { test: true }/TargetInner { name: "bank", doc: true, ..: with_path("D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", Edition2024) }
-   0.055221500s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\kaggle\RUST\Rust Udemy learnnig\bank\target\debug\.fingerprint\bank-b0bb3c9b3abed20a\test-bin-bank`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.018653600s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: stale: changed "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs"
+   0.018693500s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:           (vs) "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\target\\debug\\.fingerprint\\bank-39e9fa41b651176d\\dep-bin-bank"
+   0.018702600s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13412249426, nanos: 408723200 } < FileTime { seconds: 13412249466, nanos: 566199500 }
+   0.018919000s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: fingerprint dirty for bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank)/Check { test: false }/TargetInner { name: "bank", doc: true, ..: with_path("D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", Edition2024) }
+   0.018956100s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\target\\debug\\.fingerprint\\bank-39e9fa41b651176d\\dep-bin-bank", reference_mtime: FileTime { seconds: 13412249426, nanos: 408723200 }, stale: "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", stale_mtime: FileTime { seconds: 13412249466, nanos: 566199500 } }))
+   0.019768200s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: stale: changed "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs"
+   0.019787200s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:           (vs) "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\target\\debug\\.fingerprint\\bank-b0bb3c9b3abed20a\\dep-test-bin-bank"
+   0.019794000s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13412249426, nanos: 408723200 } < FileTime { seconds: 13412249466, nanos: 566199500 }
+   0.019932900s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint: fingerprint dirty for bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank)/Check { test: true }/TargetInner { name: "bank", doc: true, ..: with_path("D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", Edition2024) }
+   0.019951900s  INFO prepare_target{force=false package_id=bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank) target="bank"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\target\\debug\\.fingerprint\\bank-b0bb3c9b3abed20a\\dep-test-bin-bank", reference_mtime: FileTime { seconds: 13412249426, nanos: 408723200 }, stale: "D:\\kaggle\\RUST\\Rust Udemy learnnig\\bank\\src\\main.rs", stale_mtime: FileTime { seconds: 13412249466, nanos: 566199500 } }))
     Checking bank v0.1.0 (D:\kaggle\RUST\Rust Udemy learnnig\bank)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.79s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
