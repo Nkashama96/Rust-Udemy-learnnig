@@ -32,14 +32,15 @@ fn print_account(mut account:Account) -> Account{
 fn main() {
     let bank = Bank::new();
 
-    let other_bank = bank;
+    let other_bank = &bank;
 
-    let mut account = Account::new(1, String::from("me name"));
-    let other_account = account;
+    // let mut account = Account::new(1, String::from("me name"));
+    // let other_account = account;
 
   
-    account = print_account(other_account);
-    print_account(account);
-    println!("{:#?}",other_bank)
+    // account = print_account(other_account);
+    // print_account(account);
+    println!("{:#?}",other_bank);
+    println!("{:#?}",bank);
 
 }
